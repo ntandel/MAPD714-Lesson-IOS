@@ -1,25 +1,22 @@
-//
-//  AppDelegate.swift
-//  MAPD714-Lesson-IOS
-//
-//  Created by Harnam kaur on 20/11/19.
-//  Copyright © 2019 Harnam kaur. All rights reserved.
-//
+
 
 import UIKit
-
+// first step
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+//third step
+var window: UIWindow?
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
         return true
     }
 
     // MARK: UISceneSession Lifecycle
-
+   
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
